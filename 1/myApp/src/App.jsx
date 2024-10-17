@@ -25,3 +25,27 @@ const App = () => {
 };
 
 export default App;
+
+const Header = () => {
+  return <h1>{course}</h1>;
+};
+
+const Content = () => {
+  return (
+    <div>
+      <p>
+        {part1} {exercises1}
+      </p>
+      <p>
+        {part2} {exercises2}
+      </p>
+      <p>
+        {part3} {exercises3}
+      </p>
+    </div>
+  );
+};
+
+const Total = () => {
+  return <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>;
+};
